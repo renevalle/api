@@ -27,7 +27,7 @@ class ActualizarPacienteRequest extends FormRequest
             "nombres"=>"required",
             "apellidos"=>"required",
             "edad"=>"required",
-            "sexo"=>"required",                   //codigo para poder actualizar el paceinte
+            "sexo"=>"required",                   //codigo para poder actualizar el paciente
             "dni"=>"required|unique:pacientes,dni,".$this->route('paciente')->id,
             "tipo_sangre"=>"required",
             "telefono"=>"required",
